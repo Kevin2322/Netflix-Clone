@@ -14,4 +14,10 @@ export class LoginService {
     // we will store the token in localstorage
     localStorage.setItem("token",Math.random()+"");
   }
+  get isLoggedIn(){
+    if(localStorage.getItem("token")){
+      return true;
+    }
+    return false;
+  }
 }
