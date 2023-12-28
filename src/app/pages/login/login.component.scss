@@ -1,0 +1,43 @@
+.header{
+    background-image: linear-gradient(to bottom,rgb(14,14,14),rgb(9 9 9 / 7%));
+}
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    .login-card{
+        background-color: black;
+        width: 450px;
+        padding: 48px 48px;
+        .heading{
+            font-size: 24px;
+            color: white;
+            margin-bottom: 16px;
+            font-weight: bold;
+        }
+    }
+}
+
+.form-field{
+    margin-bottom: 16px;
+    .input{
+      width: 100%;
+      background-color: rgb(65, 63, 53);
+      padding: 10px 10px;
+      border-radius: 2px;
+      color: white;
+    }
+}
+.action-field{
+    display: flex;
+    justify-content: center;
+    .login-btn{
+        background-color: red;  
+        color: white;
+        padding: 10px 12px;
+        width: 100%;
+        border-radius: 2px;
+        font-weight: bold;
+    }
+}
