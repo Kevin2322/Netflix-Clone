@@ -12,8 +12,10 @@
         </div>
     </div>
     <div class="movie-categories">
-            <app-movie-category [title]="'Trending'"></app-movie-category>
-            <app-movie-category [title]="'New Release'"></app-movie-category>
+            <app-movie-category [title]="'popular'" [movieList]="popularMovies"></app-movie-category>
+            <app-movie-category [title]="'Top Rated'" [movieList]="topRatedMovies"></app-movie-category>
+            <app-movie-category [title]="'Now Playing'" [movieList]="nowPlayingMovies"></app-movie-category>
+            <app-movie-category [title]="'Upcoming'" [movieList]="upcomingMovies"></app-movie-category>
 
     </div>
 </div>

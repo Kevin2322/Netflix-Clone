@@ -1,5 +1,5 @@
 <div class="movies-card">
-    <img src="" alt="movie-image">
-    <h4>title</h4>
+    <img [src]="'https://image.tmdb.org/t/p/w500/'+movie.poster_path" alt="movie-image" />
+    <h4>{{movie.original_title}}</h4>
     <p>movie description</p>
 </div>
