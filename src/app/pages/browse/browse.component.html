@@ -1,8 +1,19 @@
-<p>browse component</p>
+<div class="browse-page">
+    <app-header></app-header>
+    <div class="banner">
+        <img  class="banner-img" src="" alt="">
+        <div class="banner-movie-info">
+            <h4>movie title</h4>
+            <p>movie description</p>
+            <div>
+                <button>Play</button>
+                <button>More Info</button>
+            </div>
+        </div>
+    </div>
+    <div class="movie-categories">
+            <app-movie-category [title]="'Trending'"></app-movie-category>
+            <app-movie-category [title]="'New Release'"></app-movie-category>
 
-
-
-
-
-<p>kuhgiugiugkhgkjh</p>
-<P>khjlihjijpioj</P>
+    </div>
+</div>

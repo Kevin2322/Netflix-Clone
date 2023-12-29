@@ -1,0 +1,22 @@
+.browse-page{
+    background-color: black;
+    .banner{
+        width: 100vw;
+        height: 100vh;
+        .banner-img{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .banner-movie-info{
+            display: flex;
+            color: white;
+            position: relative;
+            z-index: 9999;
+            flex-direction: column;
+            top: 40%;
+            padding-left: 2rem;
+        }
+    }
+}
