@@ -1,17 +1,21 @@
 <div class="browse-page">
     <app-header></app-header>
     <div class="banner">
-        <img  class="banner-img" src="" alt="">
+        @if (bannerMovie && bannerMovie.videoKey) {
+            <iframe class="banner-video"  [src]="'https://www.youtube.com/embed/'+bannerMovie.videoKey" frameborder="0"></iframe>
+        }@else {
+            <img  class="banner-img" [src]="tmdbConfig.imagePath + bannerMovie.poster_path" alt="banner image"> 
+        }
         <div class="banner-movie-info">
-            <h4>movie title</h4>
-            <p>movie description</p>
-            <div>
-                <button>Play</button>
-                <button>More Info</button>
+            <h4 class="banner-heading">{{bannerMovie.original_title}}</h4>
+            <p class="banner-description">{{bannerMovie.overview}}</p>
+            <div class="banner-action">
+                <button type="button" class="play-btn">Play</button>
+                <button  type="button" class="info-btn">More Info</button>
             </div>
         </div>
     </div>
-    <div class="movie-categories">
+    <div class="movie-categories px-16 relative z-50 -mt-40">
             <app-movie-category [title]="'popular'" [movieList]="popularMovies"></app-movie-category>
             <app-movie-category [title]="'Top Rated'" [movieList]="topRatedMovies"></app-movie-category>
             <app-movie-category [title]="'Now Playing'" [movieList]="nowPlayingMovies"></app-movie-category>

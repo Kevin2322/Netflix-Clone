@@ -1,5 +1,7 @@
-<div class="movies-card">
-    <img [src]="'https://image.tmdb.org/t/p/w500/'+movie.poster_path" alt="movie-image" />
-    <h4>{{movie.original_title}}</h4>
-    <p>movie description</p>
-</div>
+@if (movie) {
+    <div class="movies-card">
+        <img [src]="tmdbConfig.imagePath +movie.poster_path" alt="movie-image" />
+        <h4 class="title">{{movie.original_title}}</h4>
+        <!-- <p>movie description</p> -->
+    </div>
+}
